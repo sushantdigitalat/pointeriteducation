@@ -453,6 +453,10 @@ h6 {
   color: #004cbf;
 }
 
+.pr-2{
+  padding-right: 3px;
+}
+
 #hero h2 {
   color: #004cbf;
   margin: 20px 0 0 0;
