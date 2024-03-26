@@ -708,6 +708,17 @@ section {
   transition: all ease-in-out 0.3s;
   background: #fff;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  transition: .5s;
+}
+
+.services .icon-box:hover{
+  background-color: #004cbf;
+  color: #fff;
+  margin-top: -10px;
+}
+
+.services .icon-box:hover h4 a{
+  color: #fff;
 }
 
 .services .icon-box .icon {
@@ -722,7 +733,7 @@ section {
 }
 
 .services .icon-box .icon i {
-  font-size: 36px;
+  font-size: 60px;
   transition: 0.5s;
   position: relative;
 }
@@ -760,7 +771,7 @@ section {
 }
 
 .services .iconbox-blue i {
-  color: #47aeff;
+  color: #004cbf;
 }
 
 .services .iconbox-blue:hover .icon i {
