@@ -153,7 +153,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -313,7 +313,7 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #fff;
@@ -1113,7 +1113,11 @@ section {
 
 .program-list ul.curri-list{
   list-style: none;
-  padding: 20px 0 0 30px;
+  padding: 20px 0 0 0;
+}
+.program-list .collapse,
+.program-list .collapsing{
+  padding-left: 30px;
 }
 .program-list .curri-list li{
   padding: 0 0 10px 25px;
@@ -1187,8 +1191,9 @@ section {
   padding: 15px 30px;
   outline: none;
   cursor: pointer;
-  background-color: #004cbf;
-  color: #fff;
+  background-color: #fafbfb;
+  color: #004cbf;
+  border: 1px solid #004cbf;
 }
 
 .program-list .icon-help {
@@ -1217,11 +1222,11 @@ section {
 }
 
 .program-list a.collapsed {
-  color: #fff;
+  color: #004cbf;
 }
 
 .program-list a.collapsed:hover {
-  color: #fff;
+  color: #004cbf;
 }
 
 .program-list a.collapsed .icon-show {
