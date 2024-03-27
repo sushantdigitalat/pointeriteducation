@@ -515,6 +515,10 @@ h6 {
   font-size: 18px;
 }
 
+span.btn{
+  cursor: default;
+}
+
 @media (min-width: 1200px) {
   #hero {
     background-attachment: fixed;
@@ -982,7 +986,7 @@ section {
 .features .nav-tabs {
   border: 0;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  /* grid-template-columns: repeat(7, 1fr); */
 }
 
 .features .nav-link {
@@ -992,8 +996,8 @@ section {
   color: #364146;
   transition: 0.3s ease-in-out;
   border-radius: 0;
-  border-bottom: 4px solid #fafbfb;
-  text-align: center;
+  border-left: 4px solid #fafbfb;
+  text-align: left;
 }
 
 .features .nav-link h4 {
@@ -1019,7 +1023,7 @@ section {
 .features .nav-link.active {
   border-radius: 0;
   border: 0;
-  border-bottom: 4px solid #004cbf;
+  border-left: 4px solid #004cbf;
   background: #fafbfb;
 }
 
@@ -1035,7 +1039,7 @@ section {
   text-align: left;
   padding-right: calc(var(--bs-gutter-x) * .5);
   padding-left:calc(var(--bs-gutter-x) * .5);
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 .curri-list{
@@ -1053,6 +1057,30 @@ section {
   content: "\f26b";
   font-family: bootstrap-icons;
   top: 0;
+}
+.tech-list{
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.tech-list li{
+  margin: 0 10px 0 0;
+  position: relative;
+  border: 1px solid #004cbf;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 13px;
+  color: #004cbf;
+  font-weight: 700;
+}
+
+.tech-list.list-order {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tech-list.list-order li{
+  margin: 0 0 10px;
 }
 
 /*--------------------------------------------------------------
