@@ -1789,6 +1789,30 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  .level-list {
+    padding-left: 0;
+    --col-gap: 0;
+    margin-left: 0;
+    width: 100%;
+    margin-right: 0;
+  }
+  .level-list::before,
+  .level-list li.main-li .date::after,
+  .levels-heading {
+    display: none;
+  }
+  .level-list li.main-li {
+    --inlineP: 0;
+  }
+  .level-list li.main-li .date {
+    height: auto;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
