@@ -1803,111 +1803,109 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px;
-  background: #fff;
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0 none;
+  margin: 40px 0;
+}
+.price-table tr:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+.price-table tr td {
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 8px 24px;
+  font-size: 16px;
+}
+.price-table tr td:last-child {
+  border-left: 1px solid #004cbf;
+  border-right: 1px solid #004cbf;
+}
+.price-table tr:last-child td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+/* .price-table tr td:first-child {
+  border-left: 0 none;
+} */
+.price-table tr td:not(:first-child) {
   text-align: center;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.price-table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+.price-table tr:hover {
+  background-color: rgba(0, 76, 191, 0.1);
+}
+.price-table .bx-check {
+  color: #004cbf;
+  font-weight: 700;
+  font-size: 24px;
+}
+.price-table .bx-x {
+  color: #d8d6e3;
+  font-size: 24px;
 }
 
-.pricing h3 {
-  font-weight: 400;
-  margin: -20px -20px 20px -20px;
-  padding: 20px 15px;
+/* Highlighted column */
+.price-table tr:nth-child(2n) td:nth-child(4) {
+  background-color: rgba(216, 214, 227, 0.25);
+}
+.price-table tr td:nth-child(4) {
+  background-color: rgba(216, 214, 227, 0.15);
+  padding: 8px 48px;
+}
+.price-table tr td:nth-child(3) .fa-check,
+.price-table tr:nth-child(2n) td:nth-child(3) .fa-check {
+  /* color: #ffffff; */
+}
+/**/
+
+.price-table tr.price-table-head td {
   font-size: 16px;
   font-weight: 600;
-  color: #2c4964;
-  background: #f8f8f8;
+  text-transform: capitalize;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
-
-.pricing h4 {
-  font-size: 36px;
-  color: #004cbf;
-  font-weight: 600;
-
-  margin-bottom: 20px;
+.price-table tr.price-table-head {
+  background-color: #f9f8ff;
+  color: #999;
 }
-
-.pricing h4 sup {
+.price-table tr.price-table-head td:nth-child(4) {
+  background-color: #f9f8ff;
+}
+.price-table tr.price-table-head td:nth-child(4) img {
+}
+.price-table td.price {
+  color: #f43f54;
+  padding: 16px 24px;
   font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #444444;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing ul li {
-  padding-bottom: 16px;
-}
-
-.pricing ul i {
-  color: #004cbf;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .btn-wrap {
-  margin: 20px -20px -20px -20px;
-  padding: 20px 15px;
-  background: #f8f8f8;
-  text-align: center;
-}
-
-.pricing .btn-buy {
-  background: linear-gradient(42deg, #004cbf 0%, #7b27d8 100%);
-  display: inline-block;
-  padding: 10px 35px;
-  border-radius: 4px;
-  color: #fff;
-  transition: none;
-  font-size: 15px;
-  font-weight: 400;
-
   font-weight: 600;
-  transition: 0.3s;
 }
-
-.pricing .btn-buy:hover {
-  background: linear-gradient(180deg, #004cbf 0%, #7b27d8 100%);
+.price-table td.price a {
+  background-color: #004cbf;
+  color: #ffffff;
+  padding: 12px 32px;
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  display: inline-block;
+  border-radius: 5px;
 }
-
-.pricing .featured h3 {
-  color: #fff;
-  background: #004cbf;
+.price-table td.price:nth-child(4) {
+  border-bottom: 1px solid #004cbf;
 }
-
-.pricing .advanced {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background: #004cbf;
-  color: #fff;
+.price-table td.price-table-popular {
+  border-top: 3px solid #004cbf;
+  color: #004cbf;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 12px 48px;
+  font-weight: 700;
+}
+.price-table .price-blank {
+  background-color: #fff;
+  border: 0 none;
 }
 
 /*--------------------------------------------------------------
