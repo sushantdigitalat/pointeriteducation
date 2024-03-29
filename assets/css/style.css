@@ -932,7 +932,7 @@ section {
   font-size: 42px;
   line-height: 0;
   margin-right: 20px;
-  color: #004cbf;
+  color: #364146;
 }
 
 .counts .count-box span {
@@ -988,7 +988,6 @@ section {
   filter: grayscale(100%);
   transition: 0.5s;
   position: relative;
-  opacity: 0.8;
 }
 
 .services .icon-box .icon svg {
@@ -1129,11 +1128,11 @@ section {
   color: #004cbf;
 }
 
-.about .content .icon-box i {
-  font-size: 44px;
-  line-height: 44px;
+.about .content .icon-box img {
+  max-width: 42px;
+  max-height: 42px;
   color: #004cbf;
-  margin-right: 15px;
+  margin: 3px 15px 0 0;
 }
 
 .about .content .icon-box p {
