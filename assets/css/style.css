@@ -916,7 +916,6 @@ section {
 --------------------------------------------------------------*/
 .counts {
   padding: 70px 0 60px;
-  background-color: #004cbf;
 }
 
 .counts .count-box {
@@ -924,22 +923,22 @@ section {
   align-items: center;
   padding: 30px;
   width: 100%;
-  background: #fff;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  background-color: #004cbf;
+  box-shadow: 0px 0 30px rgba(0, 41, 112, 0.08);
 }
 
 .counts .count-box i {
   font-size: 42px;
   line-height: 0;
   margin-right: 20px;
-  color: #364146;
+  color: #fff;
 }
 
 .counts .count-box span {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #004cbf;
+  color: #fff;
 }
 
 .counts .count-box p {
@@ -947,6 +946,7 @@ section {
   margin: 0;
   font-family: "Nunito", sans-serif;
   font-size: 14px;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
