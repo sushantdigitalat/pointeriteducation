@@ -317,7 +317,7 @@ h6 {
 * Mobile Navigation
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #f2ad3b;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -567,7 +567,7 @@ h6 {
   background-color: #004cbf;
   color: #fff;
   border-color: #004cbf;
-  margin: 0 15px 0 0;
+  margin: 0;
 }
 
 #hero .btn-get-started:hover {
@@ -665,7 +665,7 @@ span.btn {
 
   #hero .container,
   #hero .container-fluid {
-    padding-top: 68px;
+    padding-top: 30px;
   }
 
   #hero .animated {
@@ -674,6 +674,7 @@ span.btn {
 
   #hero .hero-img {
     text-align: center;
+    padding-bottom: 30px;
   }
 
   #hero .hero-img img {
@@ -683,8 +684,8 @@ span.btn {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   #hero h2 {
@@ -694,6 +695,12 @@ span.btn {
 
   #hero .hero-img img {
     width: 60%;
+  }
+  .hero-wrapper {
+    padding: 0;
+  }
+  #myHeader.sticky {
+    display: none;
   }
 }
 
@@ -706,6 +713,15 @@ span.btn {
 @media (max-width: 575px), (max-height: 600px) {
   #hero {
     height: auto;
+    padding: 70px 0 0;
+  }
+  .online-div.listing {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .online-div {
+    margin: 15px 0;
+    width: 100%;
   }
 }
 
@@ -930,6 +946,20 @@ section {
 
 .price-content p.fee {
   opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .program-fee-wrapper {
+    grid-template-rows: 100%;
+    grid-template-columns: auto;
+    padding: 15px;
+  }
+  .pricing-wrap {
+    padding: 15px;
+  }
+  .pricing-wrap-right {
+    padding: 25px 15px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1950,6 +1980,18 @@ section {
 .price-table .price-blank {
   background-color: #fff;
   border: 0 none;
+}
+
+@media (max-width: 768px) {
+  .responsive-table {
+    overflow-x: scroll;
+  }
+  .price-table tr td {
+    font-size: 16px;
+  }
+  .price-table tr td:nth-child(4) {
+    padding: 10px 25px;
+  }
 }
 
 /*--------------------------------------------------------------
