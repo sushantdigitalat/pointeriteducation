@@ -313,7 +313,7 @@ var addClassOnScroll = function () {
     var offsetTop = $(elem).offset().top;
     var outerHeight = $(this).outerHeight(true);
 
-    if (windowTop > offsetTop - 50 && windowTop < offsetTop + outerHeight) {
+    if (windowTop > offsetTop - 100 && windowTop < offsetTop + outerHeight) {
       var elemId = $(elem).attr("id");
       $(".sub-nav-list li a.active").removeClass("active");
       $(".sub-nav-list li a[href='#" + elemId + "']").addClass("active");
