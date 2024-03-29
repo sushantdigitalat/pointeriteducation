@@ -1126,13 +1126,13 @@ section {
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 10px 0;
-  color: #364146;
+  color: #004cbf;
 }
 
 .about .content .icon-box i {
   font-size: 44px;
   line-height: 44px;
-  color: #364146;
+  color: #004cbf;
   margin-right: 15px;
 }
 
@@ -1295,7 +1295,7 @@ section {
   border-radius: 0;
   border: 0;
   border-left: 4px solid #004cbf;
-  background: #fafbfb;
+  background: #f9f8ff;
 }
 
 .curriculum .nav-link.active p {
@@ -1315,7 +1315,11 @@ section {
   text-align: left;
   /* padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5); */
-  margin-top: 8px;
+  background-color: #f9f8ff;
+  padding: 0 30px;
+}
+
+.tab-bg {
   background-color: #f9f8ff;
 }
 
@@ -1323,8 +1327,9 @@ section {
   padding-right: 0 !important;
 }
 
-.pl-0 {
+.plr-0 {
   padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .program-list ul.curri-list {
@@ -1334,8 +1339,10 @@ section {
 .program-list .collapse,
 .program-list .collapsing {
   padding: 20px 0 30px 30px;
+  background-color: #f9f8ff;
 }
 .program-list .collapse.show {
+  background-color: #f9f8ff;
 }
 .program-list .collapse.show h5 {
   color: #364146;
@@ -1345,6 +1352,7 @@ section {
   position: relative;
   margin: 0;
   color: #364146;
+  background-color: #f9f8ff;
 }
 .curri-list li::before {
   position: absolute;
@@ -1407,16 +1415,15 @@ section {
 .program-list a {
   display: block;
   position: relative;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 700;
   padding: 15px 30px;
   outline: none;
   cursor: pointer;
-  background-color: #fafbfb;
+  background-color: #f9f8ff;
   color: #004cbf;
-  border-bottom: 1px solid #004cbf;
+  border-bottom: 1px solid rgba(0, 76, 191, 0.2);
 }
 
 .program-list .icon-help {
@@ -1821,7 +1828,7 @@ section {
   font-size: 36px;
   color: #004cbf;
   font-weight: 600;
-  font-family: "Roboto", sans-serif;
+
   margin-bottom: 20px;
 }
 
@@ -1877,7 +1884,7 @@ section {
   transition: none;
   font-size: 15px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1936,7 +1943,7 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: "Roboto", sans-serif;
+
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
