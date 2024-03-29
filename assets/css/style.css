@@ -1837,9 +1837,8 @@ section {
   width: 100%;
   border-collapse: collapse;
   border: 0 none;
-  margin: 40px 0;
+  margin: 30px auto;
   max-width: 75%;
-  margin: auto;
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
 }
 .price-table tr:not(:last-child) {
@@ -1979,7 +1978,8 @@ section {
   background: #fff;
   border-radius: 5px;
   position: relative;
-  background-color: #f9f8ff;
+  background-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
 }
 
 .faq .faq-list a {
@@ -2224,7 +2224,7 @@ section {
 #footer {
   color: #364146;
   font-size: 14px;
-  background-color: #f9f8ff;
+  /* background-color: #f9f8ff; */
 }
 
 #footer .footer-top {
