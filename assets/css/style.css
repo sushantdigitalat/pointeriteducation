@@ -462,7 +462,7 @@ h6 {
 #myHeader.sticky {
   display: inline-block;
   position: fixed;
-  top: 100px;
+  top: 90px;
   left: 50%;
   width: 800px;
   margin-left: -400px;
@@ -475,6 +475,7 @@ h6 {
   margin: 0;
   display: flex;
   list-style: none;
+  justify-content: space-around;
 }
 
 #myHeader ul li {
@@ -491,7 +492,7 @@ h6 {
   color: #f2ad3b;
 }
 
-#myHeader ul li a::before {
+/* #myHeader ul li a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -508,7 +509,7 @@ h6 {
 #myHeader ul li a:hover::before {
   visibility: visible;
   width: 100%;
-}
+} */
 
 /*--------------------------------------------------------------
 # Hero Section
