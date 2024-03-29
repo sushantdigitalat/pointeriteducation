@@ -45,7 +45,7 @@
   /**
    * Navbar links active state on scroll
    */
-  let navbarlinks = select("#navbar .scrollto", true);
+  let navbarlinks = select(".sub-nav-list li a", true);
   const navbarlinksActive = () => {
     let position = window.scrollY + 200;
     navbarlinks.forEach((navbarlink) => {
@@ -306,23 +306,3 @@ window.onscroll = function (e) {
     left.className = "";
   }
 };
-
-var addClassOnScroll = function () {
-  var windowTop = $(window).scrollTop();
-  $("section[id]").each(function (index, elem) {
-    var offsetTop = $(elem).offset().top;
-    var outerHeight = $(this).outerHeight(true);
-
-    if (windowTop > offsetTop - 100 && windowTop < offsetTop + outerHeight) {
-      var elemId = $(elem).attr("id");
-      $(".sub-nav-list li a.active").removeClass("active");
-      $(".sub-nav-list li a[href='#" + elemId + "']").addClass("active");
-    }
-  });
-};
-
-$(function () {
-  $(window).on("scroll", function () {
-    addClassOnScroll();
-  });
-});
