@@ -234,6 +234,7 @@ h6 {
   font-size: 14px;
   font-weight: 600;
   border: 2px solid #f2ad3b;
+  transition: 0.5s;
 }
 
 .navbar .getstarted:hover,
@@ -427,6 +428,25 @@ h6 {
   display: block;
 }
 
+.apply-now {
+  background-color: #004cbf;
+  color: #ffffff;
+  padding: 10px 25px;
+  margin: 50px 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  display: inline-block;
+  border-radius: 5px;
+  border: 2px solid #004cbf;
+  transition: 0.5s;
+}
+.apply-now:hover,
+.apply-now:active,
+.apply-now:focus {
+  background: none;
+  color: #004cbf;
+}
 /*--------------------------------------------------------------
 # sub header Section
 --------------------------------------------------------------*/
@@ -932,6 +952,7 @@ section {
   line-height: 0;
   margin-right: 20px;
   color: #fff;
+  opacity: 0.5;
 }
 
 .counts .count-box span {
@@ -988,6 +1009,7 @@ section {
   filter: grayscale(100%);
   transition: 0.5s;
   position: relative;
+  opacity: 0.5;
 }
 
 .services .icon-box .icon svg {
@@ -1133,6 +1155,7 @@ section {
   max-height: 42px;
   color: #004cbf;
   margin: 3px 15px 0 0;
+  opacity: 0.5;
 }
 
 .about .content .icon-box p {
@@ -1255,6 +1278,7 @@ section {
   border: 0;
   display: grid;
   /* grid-template-columns: repeat(7, 1fr); */
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
 }
 
 .curriculum .nav-link {
@@ -1266,42 +1290,46 @@ section {
   border-radius: 0;
   border-left: 4px solid #eee;
   text-align: left;
+  background-color: rgba(0, 76, 191, 0.05);
 }
 
 .curriculum .nav-link h4 {
   font-size: 18px;
   font-weight: 600;
   transition: 0.3s ease-in-out;
-  opacity: 0.6;
+  opacity: 0.45;
 }
 
 .curriculum .nav-link p {
   font-size: 14px;
   margin-bottom: 0;
-  opacity: 0.6;
+  opacity: 0.45;
 }
 
-.curriculum .nav-link:hover {
+/* .curriculum .nav-link:hover {
   background: #fafbfb;
-}
+} */
 
 .curriculum .nav-link:hover h4,
 .curriculum .nav-link:hover p {
   opacity: 1;
 }
 
-.curriculum .nav-link.active {
+.curriculum .nav-link.active,
+.curriculum .nav-link:hover {
   border-radius: 0;
   border: 0;
   border-left: 4px solid #004cbf;
   background: #f9f8ff;
 }
 
-.curriculum .nav-link.active p {
+.curriculum .nav-link.active p,
+.curriculum .nav-link:hover p {
   opacity: 1;
 }
 
-.curriculum .nav-link.active h4 {
+.curriculum .nav-link.active h4,
+.curriculum .nav-link:hover h4 {
   color: #004cbf;
   opacity: 1;
 }
@@ -1320,6 +1348,7 @@ section {
 
 .tab-bg {
   background-color: #f9f8ff;
+  box-shadow: 10px 0 24px rgba(0, 0, 0, 0.15);
 }
 
 .pr-0 {
@@ -1808,14 +1837,19 @@ section {
   border-collapse: collapse;
   border: 0 none;
   margin: 40px 0;
+  max-width: 75%;
+  margin: auto;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
 }
 .price-table tr:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.03);
 }
 .price-table tr td {
   border-left: 1px solid rgba(0, 0, 0, 0.05);
-  padding: 8px 24px;
-  font-size: 16px;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #004cbf;
 }
 .price-table tr td:last-child {
   border-left: 1px solid #004cbf;
@@ -1841,18 +1875,24 @@ section {
   font-weight: 700;
   font-size: 24px;
 }
+.price-table tr td:nth-child(3) .bx-check {
+  color: rgba(0, 76, 191, 0.7);
+}
 .price-table .bx-x {
   color: #d8d6e3;
   font-size: 24px;
 }
 
 /* Highlighted column */
-.price-table tr:nth-child(2n) td:nth-child(4) {
-  background-color: rgba(216, 214, 227, 0.25);
+.price-table tr.price-table-head:nth-child(2n) td:nth-child(4) {
+  background-color: rgba(0, 76, 191, 0.1);
 }
 .price-table tr td:nth-child(4) {
-  background-color: rgba(216, 214, 227, 0.15);
+  background-color: rgba(0, 76, 191, 0.1);
   padding: 8px 48px;
+}
+.price-table tr:nth-child(odd) {
+  background-color: rgba(0, 76, 191, 0.05);
 }
 .price-table tr td:nth-child(3) .fa-check,
 .price-table tr:nth-child(2n) td:nth-child(3) .fa-check {
@@ -1866,14 +1906,12 @@ section {
   text-transform: capitalize;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
-.price-table tr.price-table-head {
+.price-table tr.price-table-head td {
   background-color: #f9f8ff;
-  color: #999;
+  color: rgba(0, 76, 191, 0.6);
 }
 .price-table tr.price-table-head td:nth-child(4) {
   background-color: #f9f8ff;
-}
-.price-table tr.price-table-head td:nth-child(4) img {
 }
 .price-table td.price {
   color: #f43f54;
@@ -1884,13 +1922,19 @@ section {
 .price-table td.price a {
   background-color: #004cbf;
   color: #ffffff;
-  padding: 12px 32px;
+  padding: 10px 25px;
   margin: 15px 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   text-transform: capitalize;
   display: inline-block;
   border-radius: 5px;
+  border: 2px solid #004cbf;
+  transition: 0.5s;
+}
+.price-table td.price a:hover {
+  background: none;
+  color: #004cbf;
 }
 .price-table td.price:nth-child(4) {
   border-bottom: 1px solid #004cbf;
