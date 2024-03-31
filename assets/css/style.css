@@ -713,7 +713,7 @@ span.btn {
 @media (max-width: 575px), (max-height: 600px) {
   #hero {
     height: auto;
-    padding: 70px 0 0;
+    padding: 70px 0 40px;
   }
   .online-div.listing {
     margin-right: 0;
@@ -1395,6 +1395,8 @@ section {
 .program-list ul.curri-list {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .program-list .collapse,
 .program-list .collapsing {
@@ -1445,6 +1447,13 @@ section {
 }
 .program-list .tech-list.list-order li {
   margin: 0 0 10px;
+}
+
+@media (max-width: 768px) {
+  .program-list ul.curri-list {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1797,10 +1806,14 @@ section {
     margin-left: 0;
     width: 100%;
     margin-right: 0;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
   }
   .level-list::before,
   .level-list li.main-li .date::after,
-  .levels-heading {
+  .levels-heading,
+  .level-list li.main-li::before,
+  .level-list li.main-li::after {
     display: none;
   }
   .level-list li.main-li {
@@ -1811,6 +1824,16 @@ section {
     padding: 10px 15px;
     border-radius: 5px;
     width: 100%;
+  }
+  .level-list li.main-li:nth-child(2),
+  .level-list li.main-li:nth-child(2n),
+  .level-list li.main-li:nth-child(odd),
+  .level-list li.main-li:nth-child(even) {
+    grid-row: initial;
+    grid-column: 1;
+  }
+  .level-list li.main-li:nth-child(odd) .date {
+    border-radius: 5px;
   }
 }
 
