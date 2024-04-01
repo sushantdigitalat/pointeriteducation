@@ -2616,6 +2616,15 @@ input[type=radio] {
   z-index: 999;
 }
 
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
 .signup-content {
   padding: 0;
   box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
@@ -2624,6 +2633,12 @@ input[type=radio] {
   width: 760px;
   background-color: #fff;
   overflow: hidden;
+  animation: fadeIn ease 0.5s;
+  opacity: 0;
+}
+
+.show .signup-content{
+  opacity: 1;
 }
 
 .signup-form, .signup-image, .signin-form, .signin-image {
