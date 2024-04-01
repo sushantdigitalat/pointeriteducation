@@ -3029,7 +3029,6 @@ label.valid {
 
 .program-list-index{
   padding: 20px 20px 10px;
-  background-color: #004cbf;
 }
 
 .program-list-index ul{
@@ -3042,10 +3041,10 @@ label.valid {
 }
 
 .program-list-index ul li {
-  padding: 5px 0 15px 30px;
+  padding: 0 0 15px 30px;
   position: relative;
   margin: 0;
-  color: #fff;
+  color: #004cbf;
   list-style: none;
   font-weight: 600;
   max-width: 90%;
@@ -3054,7 +3053,7 @@ label.valid {
 .program-list-index ul li::before {
   position: absolute;
   left: 0;
-  color: #fff;
+  color: #004cbf;
   content: "\f26b";
   font-family: bootstrap-icons;
   top: 0;
