@@ -168,7 +168,8 @@ h6 {
 }
 
 .navbar a,
-.navbar a:focus {
+.navbar a:focus,
+.navbar a:not([href]):not([class]) {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -180,6 +181,7 @@ h6 {
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
+  cursor: pointer;
 }
 
 .navbar a i,
@@ -1203,7 +1205,7 @@ section {
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 10px 0;
-  color: #004cbf;
+  color: #012970;
 }
 
 .about .content .icon-box img {
@@ -3041,13 +3043,14 @@ label.valid {
 }
 
 .program-list-index ul li {
-  padding: 0 0 15px 30px;
+  padding: 10px 10px 20px 30px;
   position: relative;
   margin: 0;
   color: #004cbf;
   list-style: none;
   font-weight: 600;
   max-width: 90%;
+  line-height: 30px;
 }
 
 .program-list-index ul li::before {
@@ -3056,7 +3059,7 @@ label.valid {
   color: #004cbf;
   content: "\f26b";
   font-family: bootstrap-icons;
-  top: 0;
+  top: 10px;
 }
 
 .program-duration{
@@ -3091,9 +3094,12 @@ label.valid {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 15px 25px;
   text-align: center;
   font-weight: 600;
+  width: 33.33%;
+  background-color: #004cbf;
+  color: #fff;
 }
 
 .programs-bottom .program-bg:nth-child(n+1){
