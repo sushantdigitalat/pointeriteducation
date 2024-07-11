@@ -11,7 +11,7 @@ body {
 }
 
 a {
-  color: #004cbf;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -29,6 +29,13 @@ h6 {
   font-family: "Nunito", sans-serif;
 }
 
+:root{
+  --primary-color:#07a4bc;
+  --secondary-color:#0c6980;
+  --text-secondary-color:#57667e;
+  --header-bg:#e9faf2;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -39,7 +46,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #004cbf;
+  background: var(--primary-color);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -81,7 +88,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #004cbf;
+  border: 6px solid var(--primary-color);
   border-top-color: #e7e4fe;
   border-radius: 50%;
   width: 60px;
@@ -177,7 +184,7 @@ h6 {
   font-family: "Nunito", sans-serif;
   font-size: 15px;
   font-weight: 600;
-  color: #004cbf;
+  color: var(--primary-color);
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -198,7 +205,7 @@ h6 {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #f2ad3b;
+  background-color: var(--secondary-color);
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -215,7 +222,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #f2ad3b;
+  color: var(--secondary-color);
 }
 
 .navbar .getstarted,
@@ -223,11 +230,11 @@ h6 {
   padding: 8px 25px;
   /* margin-left: 30px; */
   border-radius: 5px;
-  color: #f2ad3b;
+  color: var(--secondary-color);
   transition: 0.3s;
   font-size: 14px;
   font-weight: 600;
-  border: 2px solid #f2ad3b;
+  border: 2px solid var(--secondary-color);
   transition: 0.5s;
 }
 
@@ -240,11 +247,11 @@ h6 {
   margin:0 0 0 -10px;
   border-radius: 5px;
   color: #fff;
-  background-color: #004cbf;
+  background-color: var(--primary-color);
   transition: 0.3s;
   font-size: 14px;
   font-weight: 600;
-  border: 2px solid #004cbf;
+  border: 2px solid var(--primary-color);
   transition: 0.5s;
   display: inline-block;
   cursor: pointer;
@@ -254,14 +261,14 @@ h6 {
 .header-scrolled .navbar .apply-now:focus,
 .header-scrolled .navbar .apply-now:active{
   background-color: #fff;
-  color: #004cbf;
+  color: var(--primary-color);
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  /* border-color: #f2ad3b; */
-  background-color: #f2ad3b;
+  /* border-color: var(--secondary-color); */
+  background-color: var(--secondary-color);
 }
 
 .navbar .getstarted:before,
@@ -302,7 +309,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #004cbf;
+  color: var(--primary-color);
 }
 
 .navbar .dropdown:hover > ul {
@@ -338,7 +345,7 @@ h6 {
 * Mobile Navigation
 */
 .mobile-nav-toggle {
-  color: #f2ad3b;
+  color: var(--secondary-color);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -407,7 +414,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #004cbf;
+  color: var(--primary-color);
 }
 
 .navbar-mobile .getstarted,
@@ -442,7 +449,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-  color: #004cbf;
+  color: var(--primary-color);
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -450,7 +457,7 @@ h6 {
 }
 
 .apply-now {
-  background-color: #004cbf;
+  background-color: var(--primary-color);
   color: #ffffff;
   padding: 10px 25px;
   margin: 50px 0;
@@ -459,7 +466,7 @@ h6 {
   text-transform: capitalize;
   display: inline-block;
   border-radius: 5px;
-  border: 2px solid #004cbf;
+  border: 2px solid var(--primary-color);
   transition: 0.5s;
   cursor: pointer;
 }
@@ -470,7 +477,7 @@ h6 {
 .apply-now:active,
 .apply-now:focus {
   background: none;
-  color: #004cbf;
+  color: var(--primary-color);
 }
 /*--------------------------------------------------------------
 # sub header Section
@@ -508,13 +515,13 @@ h6 {
 }
 
 #myHeader ul li a {
-  color: #004cbf;
+  color: var(--primary-color);
   position: relative;
 }
 
 #myHeader ul li a:hover,
 #myHeader ul li a.active {
-  color: #f2ad3b;
+  color: var(--secondary-color);
 }
 
 /* #myHeader ul li a::before {
@@ -524,7 +531,7 @@ h6 {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #f2ad3b;
+  background-color: var(--secondary-color);
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -560,7 +567,7 @@ h6 {
   font-size: 36px;
   font-weight: 700;
   line-height: 42px;
-  color: #004cbf;
+  color: var(--primary-color);
 }
 
 .pr-2 {
@@ -568,7 +575,7 @@ h6 {
 }
 
 #hero h2 {
-  color: #004cbf;
+  color: var(--primary-color);
   margin: 20px 0 0 0;
   font-size: 20px;
   line-height: 30px;
@@ -584,21 +591,21 @@ h6 {
   border-radius: 5px;
   transition: 0.5s;
   margin-top: 30px;
-  color: #f2ad3b;
-  border: 2px solid #f2ad3b;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
 }
 
 #hero .btn-get-started.apply {
-  background-color: #004cbf;
+  background-color: var(--primary-color);
   color: #fff;
-  border-color: #004cbf;
+  border-color: var(--primary-color);
   margin: 0;
   cursor: pointer;
 }
 
 #hero .btn-get-started:hover {
   background: none;
-  color: #004cbf;
+  color: var(--primary-color);
 }
 
 #hero .animated {
@@ -606,10 +613,10 @@ h6 {
 }
 
 .online-div {
-  border: 1px solid #004cbf;
+  border: 1px solid var(--primary-color);
   padding: 15px 30px;
   margin: 25px 0 0;
-  color: #004cbf;
+  color: var(--primary-color);
   border-radius: 5px;
   float: left;
   text-align: center;
@@ -642,13 +649,13 @@ h6 {
 .online-div h5 {
   margin: 0 0 10px;
   padding: 0 0 10px;
-  border-bottom: 1px solid #004cbf;
+  border-bottom: 1px solid var(--primary-color);
   font-weight: 700;
 }
 
 .learning-mode {
-  /* background-color: #004cbf; */
-  color: #004cbf;
+  /* background-color: var(--primary-color); */
+  color: var(--primary-color);
   padding: 20px 0;
   /* margin: 25px 0 0; */
   /* float: left;
@@ -660,16 +667,16 @@ h6 {
 }
 
 .btn-first {
-  background-color: #f2ad3b;
+  background-color: var(--secondary-color);
   color: #fff;
-  border-color: #f2ad3b;
+  border-color: var(--secondary-color);
   padding: 15px 30px;
   font-size: 18px;
 }
 .btn-second {
-  background-color: #004cbf;
+  background-color: var(--primary-color);
   color: #fff;
-  border-color: #004cbf;
+  border-color: var(--primary-color);
   padding: 15px 30px;
   font-size: 18px;
 }
@@ -785,7 +792,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #012970;
+  color: var(--primary-color);
 }
 
 .section-title h2::after {
@@ -794,7 +801,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #004cbf;
+  background: var(--primary-color);
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -830,7 +837,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #004cbf;
+  color: var(--primary-color);
   position: absolute;
   top: 0;
   left: 0;
@@ -850,15 +857,15 @@ section {
   border-radius: 5px;
   transition: 0.5s;
   color: #fff;
-  background: #004cbf;
+  background: var(--primary-color);
   position: relative;
-  border: 2px solid #004cbf;
+  border: 2px solid var(--primary-color);
 }
 
 .about .content .read-more:hover {
   background-color: #fff;
-  color: #004cbf;
-  border: 2px solid #004cbf;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
 }
 
 /* .about .content .read-more i {
@@ -877,10 +884,10 @@ section {
   grid-template-columns: 40% 60%;
   max-width: 800px;
   border-radius: 10px;
-  /* border: 3px solid #004cbf; */
+  /* border: 3px solid var(--primary-color); */
   padding: 30px;
   margin: auto;
-  background-color: #004cbf;
+  background-color: var(--primary-color);
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -890,17 +897,17 @@ section {
   padding: 30px;
   display: grid;
   grid-row: auto;
-  color: #004cbf;
+  color: var(--primary-color);
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   align-content: center;
 }
 
 .pricing-wrap .btn {
-  background-color: #004cbf;
+  background-color: var(--primary-color);
   color: #fff;
   font-weight: 700;
   padding: 5px 20px;
-  border-color: #004cbf;
+  border-color: var(--primary-color);
 }
 
 .price-div {
@@ -1001,7 +1008,7 @@ section {
   align-items: center;
   padding: 30px;
   width: 100%;
-  background-color: #004cbf;
+  background-color: var(--primary-color);
   box-shadow: 0px 0 30px rgba(0, 41, 112, 0.08);
 }
 
@@ -1041,7 +1048,7 @@ section {
 }
 
 .services .icon-box:hover {
-  /* background-color: #004cbf;
+  /* background-color: var(--primary-color);
   color: #fff; */
   margin-top: -10px;
 }
@@ -1088,7 +1095,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #004cbf;
+  color: var(--primary-color);
   transition: ease-in-out 0.3s;
 }
 
@@ -1098,12 +1105,16 @@ section {
   margin-bottom: 0;
 }
 
+.services .icon-box a p{
+  color:#444444;
+}
+
 .services .icon-box:hover {
   border-color: #fff;
 }
 
 .services .iconbox-blue i {
-  color: #004cbf;
+  color: var(--primary-color);
 }
 
 .services .iconbox-blue:hover .icon i {
@@ -1187,7 +1198,7 @@ section {
 .features .icon-box i {
   font-size: 48px;
   float: left;
-  color: #004cbf;
+  color: var(--primary-color);
 }
 
 .features .icon-box p {
@@ -1205,13 +1216,13 @@ section {
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 10px 0;
-  color: #012970;
+  color: var(--primary-color);
 }
 
 .about .content .icon-box img {
   max-width: 42px;
   max-height: 42px;
-  color: #004cbf;
+  color: var(--primary-color);
   margin: 3px 15px 0 0;
   opacity: 0.5;
 }
@@ -1316,11 +1327,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #004cbf;
+  border: 1px solid var(--primary-color);
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #004cbf;
+  background-color: var(--primary-color);
 }
 
 @media (max-width: 767px) {
@@ -1377,7 +1388,7 @@ section {
 .curriculum .nav-link:hover {
   border-radius: 0;
   border: 0;
-  border-left: 4px solid #004cbf;
+  border-left: 4px solid var(--primary-color);
   background: #f9f8ff;
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
 }
@@ -1389,7 +1400,7 @@ section {
 
 .curriculum .nav-link.active h4,
 .curriculum .nav-link:hover h4 {
-  color: #004cbf;
+  color: var(--primary-color);
   opacity: 1;
 }
 
@@ -1460,11 +1471,11 @@ section {
 .program-list .tech-list li {
   margin: 0 10px 0 0;
   position: relative;
-  border: 1px solid #004cbf;
+  border: 1px solid var(--primary-color);
   border-radius: 5px;
   padding: 5px 15px;
   font-size: 13px;
-  color: #004cbf;
+  color: var(--primary-color);
   font-weight: 700;
 }
 
@@ -1518,7 +1529,7 @@ section {
   outline: none;
   cursor: pointer;
   background-color: #f9f8ff;
-  color: #004cbf;
+  color: var(--primary-color);
   border-bottom: 1px solid rgba(0, 76, 191, 0.2);
 }
 
@@ -1548,11 +1559,11 @@ section {
 }
 
 .program-list a.collapsed {
-  color: #004cbf;
+  color: var(--primary-color);
 }
 
 .program-list a.collapsed:hover {
-  color: #004cbf;
+  color: var(--primary-color);
 }
 
 .program-list a.collapsed .icon-show {
@@ -1583,7 +1594,7 @@ section {
   margin-left: -10px;
   top: -45px;
   font-size: 18px;
-  color: #004cbf;
+  color: var(--primary-color);
   font-weight: 700;
 }
 
@@ -1632,7 +1643,7 @@ section {
   content: "1";
   right: -85px;
   top: 12px;
-  color: #004cbf;
+  color: var(--primary-color);
   font-weight: 700;
 }
 
@@ -1641,7 +1652,7 @@ section {
   content: "2";
   left: -85px;
   top: 12px;
-  color: #004cbf;
+  color: var(--primary-color);
   font-weight: 700;
 }
 
@@ -1650,7 +1661,7 @@ section {
   content: "3";
   right: -85px;
   top: 12px;
-  color: #004cbf;
+  color: var(--primary-color);
   font-weight: 700;
 }
 
@@ -1659,7 +1670,7 @@ section {
   content: "4";
   left: -85px;
   top: 12px;
-  color: #004cbf;
+  color: var(--primary-color);
   font-weight: 700;
 }
 
@@ -1668,7 +1679,7 @@ section {
   content: "5";
   right: -85px;
   top: 12px;
-  color: #004cbf;
+  color: var(--primary-color);
   font-weight: 700;
 }
 
@@ -1677,7 +1688,7 @@ section {
   content: "6";
   left: -85px;
   top: 12px;
-  color: #004cbf;
+  color: var(--primary-color);
   font-weight: 700;
 }
 
@@ -1688,7 +1699,7 @@ section {
   margin-inline: calc(var(--inlineP) * -1);
 
   text-align: center;
-  background-color: #004cbf;
+  background-color: var(--primary-color);
 
   color: white;
   font-size: 1.25rem;
@@ -1706,7 +1717,7 @@ section {
   content: "";
   width: var(--inlineP);
   aspect-ratio: 1;
-  background: #004cbf;
+  background: var(--primary-color);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
   position: absolute;
   top: 100%;
@@ -1720,8 +1731,8 @@ section {
   position: absolute;
   width: 1rem;
   aspect-ratio: 1;
-  background: #004cbf;
-  border: 0.3rem solid #004cbf;
+  background: var(--primary-color);
+  border: 0.3rem solid var(--primary-color);
   border-radius: 50%;
   top: 50%;
 
@@ -1894,14 +1905,14 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #004cbf;
+  border: 1px solid var(--primary-color);
 }
 
 .portfolio-details
   .portfolio-details-slider
   .swiper-pagination
   .swiper-pagination-bullet-active {
-  background-color: #004cbf;
+  background-color: var(--primary-color);
 }
 
 .portfolio-details .portfolio-info {
@@ -1960,11 +1971,11 @@ section {
   padding: 12px 30px;
   font-size: 18px;
   font-weight: 700;
-  color: #004cbf;
+  color: var(--primary-color);
 }
 .price-table tr td:last-child {
-  border-left: 1px solid #004cbf;
-  border-right: 1px solid #004cbf;
+  border-left: 1px solid var(--primary-color);
+  border-right: 1px solid var(--primary-color);
 }
 .price-table tr:last-child td {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -1982,7 +1993,7 @@ section {
   background-color: rgba(0, 76, 191, 0.1);
 }
 .price-table .bx-check {
-  color: #004cbf;
+  color: var(--primary-color);
   font-weight: 700;
   font-size: 24px;
 }
@@ -2031,7 +2042,7 @@ section {
   font-weight: 600;
 }
 .price-table td.price a {
-  background-color: #004cbf;
+  background-color: var(--primary-color);
   color: #ffffff;
   padding: 10px 25px;
   margin: 15px 0;
@@ -2040,20 +2051,20 @@ section {
   text-transform: capitalize;
   display: inline-block;
   border-radius: 5px;
-  border: 2px solid #004cbf;
+  border: 2px solid var(--primary-color);
   transition: 0.5s;
   cursor: pointer;
 }
 .price-table td.price a:hover {
   background: none;
-  color: #004cbf;
+  color: var(--primary-color);
 }
 .price-table td.price:nth-child(4) {
-  border-bottom: 1px solid #004cbf;
+  border-bottom: 1px solid var(--primary-color);
 }
 .price-table td.price-table-popular {
-  border-top: 3px solid #004cbf;
-  color: #004cbf;
+  border-top: 3px solid var(--primary-color);
+  color: var(--primary-color);
   text-transform: uppercase;
   font-size: 12px;
   padding: 12px 48px;
@@ -2081,7 +2092,7 @@ section {
 --------------------------------------------------------------*/
 
 .faq .section-title h2::after {
-  background: #004cbf;
+  background: var(--primary-color);
 }
 
 .faq .faq-list {
@@ -2122,7 +2133,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #004cbf;
+  color: var(--primary-color);
 }
 
 .faq .faq-list .icon-show,
@@ -2147,7 +2158,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #004cbf;
+  color: var(--primary-color);
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -2177,7 +2188,7 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #004cbf;
+  color: var(--primary-color);
   border-radius: 50%;
   padding: 8px;
 }
@@ -2252,7 +2263,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #004cbf;
+  border-color: var(--primary-color);
 }
 
 .contact .php-email-form input {
@@ -2264,7 +2275,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #004cbf;
+  background: var(--primary-color);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -2457,7 +2468,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #004cbf;
+  background: var(--primary-color);
   color: #fff;
   transition: 0.3s;
   border-radius: 0 5px 5px 0;
@@ -2465,11 +2476,11 @@ section {
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: #004cbf;
+  background: var(--primary-color);
 }
 
 #footer .copyright-wrap {
-  border-top: 1px solid #004cbf;
+  border-top: 1px solid var(--primary-color);
 }
 
 #footer .credits {
@@ -2675,7 +2686,7 @@ figure {
 
 .form-submit {
   display: inline-block;
-  background: #004cbf;
+  background: var(--primary-color);
   color: #fff;
   border-bottom: none;
   width: auto;
@@ -2687,12 +2698,12 @@ figure {
   -ms-border-radius: 5px;
   margin-top: 25px;
   cursor: pointer;
-  border: 2px solid #004cbf;
+  border: 2px solid var(--primary-color);
   transition: 0.5s;
 }
   .form-submit:hover {
     background-color: #fff;
-    color: #004cbf;
+    color: var(--primary-color);
   }
 
 #signin {
@@ -2863,7 +2874,7 @@ label.valid {
 
 .signup-content i.bx-x{
   font-size: 24px;
-  color: #004cbf;
+  color: var(--primary-color);
   cursor: pointer;
   position: absolute;
   right: 10px;
@@ -3020,12 +3031,12 @@ label.valid {
 }
 
 .program-wrap h4{
-  color: #012970;
+  color: var(--primary-color);
 }
 
 .program-bg{
   background-color: #f9f8ff;
-  color: #004cbf;
+  color: var(--primary-color);
   box-shadow: 0px 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -3046,7 +3057,7 @@ label.valid {
   padding: 10px 10px 20px 30px;
   position: relative;
   margin: 0;
-  color: #004cbf;
+  color: var(--primary-color);
   list-style: none;
   font-weight: 600;
   max-width: 90%;
@@ -3056,7 +3067,7 @@ label.valid {
 .program-list-index ul li::before {
   position: absolute;
   left: 0;
-  color: #004cbf;
+  color: var(--primary-color);
   content: "\f26b";
   font-family: bootstrap-icons;
   top: 10px;
@@ -3086,7 +3097,7 @@ label.valid {
 
 .main-program-icon{
   font-size: 42px;
-  color: #004cbf;
+  color: var(--primary-color);
 }
 
 .programs-bottom .program-bg{
@@ -3098,7 +3109,7 @@ label.valid {
   text-align: center;
   font-weight: 600;
   width: 33.33%;
-  background-color: #004cbf;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
