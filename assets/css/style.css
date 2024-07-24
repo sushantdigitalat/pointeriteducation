@@ -614,18 +614,11 @@ h6 {
 
 .online-div {
   border: 1px solid var(--primary-color);
-  padding: 15px 30px;
-  margin: 25px 0 0;
+  padding: 20px;
+  margin: 25px 15px 0 0;
   color: var(--primary-color);
   border-radius: 5px;
   float: left;
-  text-align: center;
-}
-
-.online-div.listing {
-  margin-right: 15px;
-  text-align: left;
-  padding: 13.5px 15px;
 }
 .online-div.listing ul {
   margin: 0;
@@ -683,6 +676,17 @@ h6 {
 
 span.btn {
   cursor: default;
+}
+
+.btn-theme{
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+.btn-theme:hover,
+.btn-theme:active,
+.btn-theme:focus{
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 @media (min-width: 1200px) {
@@ -809,6 +813,258 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
+
+/*--------------------------------------------------------------
+# Special Section
+--------------------------------------------------------------*/
+.special-section{
+  padding: 0;
+}
+.special-section .special-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  background-color: var(--secondary-color);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.special-section .special-container .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.special-section .special-container .box .img-box {
+  width: 55px;
+  margin-right: 30px;
+}
+
+.special-section .special-container .box .img-box img {
+  max-width: 100%;
+}
+
+.special-section .special-container .box .detail-box a {
+  display: inline-block;
+  color: #fdda6e;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.special-section .special-container .box.b2 {
+  border-left: 1px solid var(--primary-color);
+  border-right: 1px solid var(--primary-color);
+}
+
+/*===============================
+	who-can-join CSS
+=================================*/
+.who-can-join {
+	padding: 40px 0 0;
+}
+.who-can-join .container{
+  position: relative;
+}
+.who-can-join .cta-inner{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+  background-image: url(../img/cta-bg.jpg);
+  background-position: 50% -15.325px;
+  padding: 90px 0;
+}
+.overlay::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background: #20232E;
+  content: "";
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.who-can-join .text-content {
+	background: transparent;
+	z-index: 333;
+	position: relative;
+	border-radius: 5px;
+}
+.who-can-join .text-content h2 {
+	font-size: 35px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+.who-can-join .text-content h2 span {
+	font-weight: 500;
+	font-style: italic;
+	border-bottom: 2px solid;
+}
+.who-can-join .text-content p{
+	color:#eee;
+}
+.who-can-join .button {
+	margin-top: 20px;
+}
+.who-can-join .button .btn {
+	margin-right: 15px;
+}
+.who-can-join .button .btn:last-child{
+	margin:0;
+}
+.who-can-join .cta-image {
+	position: absolute;
+	right: 0;
+	bottom: -90px;
+}
+.who-can-join h4{
+  border-bottom: 1px solid #fff;
+  padding: 10px 0 15px 0;
+  margin: 0 0 15px;
+}
+.join-listing{
+  padding: 0;
+  margin: 0;
+}
+.join-listing li{
+  list-style: none;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  padding: 5px 0 0 35px;
+}
+.join-listing li::before {
+  position: absolute;
+  content: "\f134";
+  font-family: "bootstrap-icons";
+  font-size: 24px;
+  top: 0px;
+  left: 0;
+  font-weight: 700;
+}
+/*===============================
+	End Call to Action CSS
+=================================*/
+
+/*===============================
+	Events CSS
+=================================*/
+.events{
+	background:#F8F8F8;
+}
+.event-img, .coming-event {
+	margin-top: 30px;
+}
+.coming-event {
+	padding-left: 35px;
+}
+.events .single-event {
+	background: #fff;
+	position: relative;
+	margin-left: 0;
+	padding: 30px 20px 30px 60px;
+	margin-bottom: 30px;
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.events .single-event:last-child{
+	margin:0;
+}
+.events .event-date {
+	position: absolute;
+	left: -35px;
+	width: 60px;
+  height: 60px;
+	text-align: center;
+	top: 50%;
+	margin-top: -30px;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.events .single-event:hover .event-date {
+	border-radius:100%;
+}
+.events .event-date i {
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.events .single-event:hover .event-date p{
+	font-size:25px;
+}
+.events .event-date p span {
+	display: block;
+	font-size: 14px;
+	font-weight:500;
+}
+.events .event-title {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.events .event-title a {
+	font-weight: 700;
+	color: #252525;
+}
+.events .entry-date-time {
+	color: #555;
+	margin-top: 5px;
+	display: block;
+}
+/* Events Archive */
+.events.archive{}
+.events.archive .single-event {
+	padding: 15px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+.events.archive .event-image{
+	position: relative;
+	overflow:hidden;
+}
+.events.archive .event-image img{
+	width: 100%;
+	height: 100%;
+}
+.events.archive .single-event:hover .event-image img{
+	-webkit-transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	transform:scale(1.2);
+}
+.events.archive .event-date {
+	top: 5px;
+	margin: 0;
+	left: 5px;
+}
+.events.archive .event-content{
+	margin-top: 20px;
+}
+/*===============================
+	End Events CSS
+=================================*/
 
 /*--------------------------------------------------------------
 # About
@@ -1963,6 +2219,14 @@ section {
   max-width: 90%;
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
 }
+.price-table.join tr.price-table-head td{
+  background-color: var(--primary-color);
+  font-size: 27px;
+  color: #fff;
+}
+.price-table.join tr td:not(:first-child){
+  text-align: left;
+}
 .price-table tr:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.03);
 }
@@ -1973,9 +2237,15 @@ section {
   font-weight: 700;
   color: var(--primary-color);
 }
+.price-table.join tr td {
+  font-size: 20px;
+}
 .price-table tr td:last-child {
   border-left: 1px solid var(--primary-color);
   border-right: 1px solid var(--primary-color);
+}
+.price-table.join tr td:last-child {
+  border-right: none;
 }
 .price-table tr:last-child td {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -2021,6 +2291,10 @@ section {
   /* color: #ffffff; */
 }
 /**/
+
+.price-table.join tr:nth-child(odd) {
+  background: none;
+}
 
 .price-table tr.price-table-head td {
   font-size: 16px;
