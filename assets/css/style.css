@@ -826,7 +826,7 @@ section {
   display: flex;
   color: #ffffff;
   background-color: var(--secondary-color);
-  padding: 25px;
+  padding: 35px 25px 30px;
   border-radius: 10px;
 }
 
