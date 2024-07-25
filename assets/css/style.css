@@ -797,6 +797,14 @@ section {
   background-color: #f9f8ff;
 }
 
+.primary-bg {
+  background-color: var(--primary-color);
+}
+
+.secondary-bg {
+  background-color: var(--secondary-color);
+}
+
 .section-title {
   text-align    : center;
   padding-bottom: 30px;
@@ -1527,7 +1535,7 @@ section {
   font-size  : 20px;
   font-weight: 700;
   margin     : 0 0 10px 0;
-  color      : var(--primary-color);
+  color      : var(--secondary-color);
 }
 
 .about .content .icon-box img {
@@ -1716,7 +1724,7 @@ section {
 
 .curriculum .nav-link.active h4,
 .curriculum .nav-link:hover h4 {
-  color  : var(--primary-color);
+  color  : var(--secondary-color);
   opacity: 1;
 }
 
@@ -1852,7 +1860,7 @@ section {
   outline         : none;
   cursor          : pointer;
   background-color: #f9f8ff;
-  color           : var(--primary-color);
+  color           : var(--secondary-color);
   border-bottom   : 1px solid rgba(0, 76, 191, 0.2);
 }
 
@@ -1882,11 +1890,11 @@ section {
 }
 
 .program-list a.collapsed {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .program-list a.collapsed:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .program-list a.collapsed .icon-show {
@@ -2320,6 +2328,10 @@ section {
   font-size  : 18px;
   font-weight: 700;
   color      : var(--primary-color);
+}
+
+.price-table.join tr td {
+  color      : var(--secondary-color);
 }
 
 .price-table.join tr td {
