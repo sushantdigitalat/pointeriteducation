@@ -1024,6 +1024,7 @@ section {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition   : all 0.3s ease 0s;
   transition        : all 0.3s ease 0s;
+
 }
 
 .events .single-event:last-child {
@@ -1045,6 +1046,7 @@ section {
   display           : flex;
   align-items       : center;
   justify-content   : center;
+  border-radius: 5px;
 }
 
 .events .single-event:hover .event-date {
