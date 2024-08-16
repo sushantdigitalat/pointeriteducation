@@ -3808,3 +3808,10 @@ label.valid:after {
     margin: 0 0 40px;
   }
 }
+
+.bi-1 {
+  font-size: 1.4rem;
+}
+.mr-1 {
+  margin-right: 0.5rem;
+}
