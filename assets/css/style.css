@@ -2500,7 +2500,7 @@ section {
 
 .price-table tr.price-table-head td {
   background-color: #f9f8ff;
-  color: rgba(0, 76, 191, 0.6);
+  color: var(--secondary-color);
 }
 
 .price-table tr.price-table-head td:nth-child(4) {
@@ -3814,4 +3814,33 @@ label.valid:after {
 }
 .mr-1 {
   margin-right: 0.5rem;
+}
+
+/********* program-table **********/
+
+.program-table th {
+  padding: 15px 20px;
+  font-size: 18px;
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.program-table td {
+  padding: 15px 20px;
+}
+
+/* .program-table tbody tr:first-child td:last-child {
+  border-right: 1px solid #ddd;
+} */
+
+/* .program-table tbody tr:nth-child(n + 1) td:first-child {
+  border-left: 1px solid #ddd;
+} */
+
+.program-table tbody tr:nth-child(2n + 1) td:nth-child(n + 1) {
+  background-color: rgba(0, 76, 191, 0.05);
+}
+
+.program-table tbody tr td:first-child {
+  background-color: none !important;
 }
