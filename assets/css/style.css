@@ -2398,10 +2398,15 @@ section {
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
 }
 
-.price-table.join tr.price-table-head td {
-  background-color: var(--primary-color);
-  font-size: 27px;
+.price-table.w-100 {
+  max-width: 100%;
+}
+
+.price-table.join thead tr th {
+  background-color: var(--secondary-color);
+  font-size: 22px;
   color: #fff;
+  padding: 12px 30px;
 }
 
 .price-table.join tr td:not(:first-child) {
@@ -2425,13 +2430,14 @@ section {
 }
 
 .price-table.join tr td {
-  font-size: 20px;
+  font-size: 18px;
 }
 
-.price-table tr td:last-child {
+/* .price-table tr td:not(:first-child),
+.price-table tr th:not(:first-child) {
   border-left: 1px solid var(--primary-color);
   border-right: 1px solid var(--primary-color);
-}
+} */
 
 .price-table.join tr td:last-child {
   border-right: none;
@@ -2472,9 +2478,6 @@ section {
 }
 
 /* Highlighted column */
-.price-table tr.price-table-head:nth-child(2n) td:nth-child(4) {
-  background-color: rgba(0, 76, 191, 0.1);
-}
 
 .price-table tr td:nth-child(4) {
   background-color: rgba(0, 76, 191, 0.1);
@@ -2491,19 +2494,19 @@ section {
   background: none;
 }
 
-.price-table tr.price-table-head td {
+.price-table thead tr th {
   font-size: 16px;
   font-weight: 600;
   text-transform: capitalize;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.price-table tr.price-table-head td {
+.price-table thead tr th {
   background-color: #f9f8ff;
   color: var(--secondary-color);
 }
 
-.price-table tr.price-table-head td:nth-child(4) {
+.price-table thead tr th {
   background-color: #f9f8ff;
 }
 
@@ -3831,16 +3834,25 @@ label.valid:after {
 
 /* .program-table tbody tr:first-child td:last-child {
   border-right: 1px solid #ddd;
-} */
+}
 
-/* .program-table tbody tr:nth-child(n + 1) td:first-child {
+.program-table tbody tr:nth-child(n + 1) td:first-child {
   border-left: 1px solid #ddd;
-} */
+}
 
 .program-table tbody tr:nth-child(2n + 1) td:nth-child(n + 1) {
   background-color: rgba(0, 76, 191, 0.05);
+} */
+
+.program-table tbody tr:first-child td:first-child,
+.program-table tbody tr:nth-child(8) td:first-child {
+  font-weight: bold;
 }
 
-.program-table tbody tr td:first-child {
-  background-color: none !important;
+.program-table tbody tr:nth-child(-n + 7) td:nth-child(n + 1) {
+  background-color: rgba(0, 76, 191, 0.05);
+}
+
+.program-table tbody tr:nth-child(n + 8) td:nth-child(n + 1) {
+  background-color: rgba(0, 76, 191, 0.15);
 }
