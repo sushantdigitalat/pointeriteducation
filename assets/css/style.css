@@ -860,7 +860,8 @@ section {
   font-size: 18px;
   width: 60%;
   line-height: 27px;
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
+  font-weight: normal;
 }
 
 /*--------------------------------------------------------------
@@ -1027,10 +1028,6 @@ section {
 /*===============================
 	Events CSS
 =================================*/
-.events {
-  background: #f8f8f8;
-}
-
 .event-img,
 .coming-event {
   margin-top: 30px;
@@ -1182,7 +1179,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
   position: absolute;
   top: 0;
   left: 0;
@@ -1444,7 +1441,7 @@ section {
 }
 
 .services .icon-box h4 {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
   transition: ease-in-out 0.3s;
 }
 
@@ -2452,11 +2449,11 @@ section {
   padding: 12px 30px;
   font-size: 16px;
   font-weight: 700;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
 }
 
 .price-table.join tr td {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 /* .price-table tr td:not(:first-child),
@@ -2478,6 +2475,8 @@ section {
 } */
 .price-table tr td:not(:first-child) {
   text-align: center;
+  color: var(--secondary-color);
+  font-size: 18px;
 }
 
 .price-table tr:nth-child(even) {
@@ -2570,7 +2569,7 @@ section {
 .price-table td.price-table-popular {
   border-top: 3px solid var(--primary-color);
   color: var(--primary-color);
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 12px;
   padding: 12px 48px;
   font-weight: 700;
