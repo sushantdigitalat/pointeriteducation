@@ -510,8 +510,8 @@ h6 {
   position: fixed;
   top: 90px;
   left: 50%;
-  width: 800px;
-  margin-left: -400px;
+  width: 1000px;
+  margin-left: -500px;
   z-index: 99;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
 }
@@ -1041,8 +1041,8 @@ section {
   background: #fff;
   position: relative;
   margin-left: 0;
-  padding: 30px 20px 30px 60px;
-  margin-bottom: 30px;
+  padding: 15px 20px 15px 45px;
+  margin-bottom: 20px;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -1097,10 +1097,10 @@ section {
 }
 
 .events .event-title {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--secondary-color);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .events .event-title a {
@@ -1390,6 +1390,7 @@ section {
   background-color: #fff;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transition: 0.5s;
+  border-radius: 5px;
   /* border: 1px solid var(--primary-color); */
 }
 
@@ -1734,7 +1735,7 @@ section {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 16px;
-  color: #01036f;
+  color: var(--secondary-color);
   position: relative;
   padding-bottom: 10px;
 }
@@ -1754,7 +1755,7 @@ section {
   font-style: italic;
   display: block;
   font-size: 13px;
-  color: #01036f;
+  color: var(--secondary-color);
 }
 
 .team .member .social {
@@ -1763,7 +1764,7 @@ section {
 
 .team .member .social a {
   transition: color 0.3s;
-  color: #01036f;
+  color: var(--secondary-color);
 }
 
 .team .member .social a:hover {
@@ -2240,8 +2241,8 @@ section {
 }
 
 /* shadows */
-.level-list li.main-li .title::before,
-.level-list li.main-li .descr::before {
+.level-list li.main-li .title::before
+/* .level-list li.main-li .descr::before */{
   content: "";
   position: absolute;
   width: 90%;
@@ -2869,13 +2870,13 @@ section {
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 40px 0 30px 0;
   position: relative;
 }
 
-#footer .footer-top .footer-contact {
+/* #footer .footer-top .footer-contact {
   margin-bottom: 30px;
-}
+} */
 
 #footer .footer-top .footer-contact h3 {
   font-size: 28px;
@@ -2900,9 +2901,9 @@ section {
   padding-bottom: 12px;
 }
 
-#footer .footer-top .footer-links {
+/* #footer .footer-top .footer-links {
   margin-bottom: 30px;
-}
+} */
 
 #footer .footer-top .footer-links ul {
   list-style: none;
@@ -2923,9 +2924,9 @@ section {
   align-items: center;
 }
 
-#footer .footer-top .footer-links ul li:first-child {
+/* #footer .footer-top .footer-links ul li:first-child {
   padding-top: 0;
-}
+} */
 
 #footer .footer-top .footer-links ul a {
   color: #364146;
@@ -3004,7 +3005,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: var(--secondary-color);
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -3019,6 +3020,15 @@ section {
   background: rgba(255, 255, 255, 0.2);
   color: #364146;
   text-decoration: none;
+}
+
+.footer-ul{
+  display: flex;
+  float: right;
+}
+
+.footer-ul li{
+  margin: 0 0 0 40px;
 }
 
 /*--------------------------------------------------------------
@@ -3678,7 +3688,7 @@ label.valid:after {
 }
 
 .program-list-index ul li {
-  padding: 10px 10px 20px 40px;
+  padding: 0 10px 10px 40px;
   position: relative;
   margin: 0;
   color: #fff;
@@ -3695,7 +3705,7 @@ label.valid:after {
   color: #fff;
   content: "\f26e";
   font-family: bootstrap-icons;
-  top: 12px;
+  top: 2px;
   font-size: 30px;
 }
 
@@ -3739,7 +3749,7 @@ label.valid:after {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 25px 25px;
+  padding: 15px;
   text-align: center;
   font-weight: 600;
   width: 33.33%;
@@ -3751,11 +3761,16 @@ label.valid:after {
   border-radius: 5px;
 }
 
+.programs-bottom .program-bg h3{
+  margin-bottom: 5px;
+}
+
 .programs-bottom .program-bg h5{
   font-weight: 400;
-  line-height: 27px;
+  line-height: 24px;
   margin: 0;
   padding: 0;
+  font-size: 18px;
 }
 
 .apply-now-2 {
@@ -3932,5 +3947,9 @@ label.valid:after {
   padding: 20px;
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
   margin: auto;
-  max-width: 90%;
+  max-width: 50%;
+}
+
+.in-line{
+  margin-bottom: 0;
 }
