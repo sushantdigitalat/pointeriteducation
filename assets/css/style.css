@@ -643,6 +643,7 @@ h6 {
   color: var(--primary-color);
   border-radius: 5px;
   float: left;
+  width: 45%;
 }
 
 .online-div.listing ul {
@@ -2450,9 +2451,9 @@ section {
   /* color: var(--primary-color); */
 }
 
-.price-table.join tr td {
+/* .price-table.join tr td {
   color: var(--primary-color);
-}
+} */
 
 /* .price-table tr td:not(:first-child),
 .price-table tr th:not(:first-child) {
@@ -2473,8 +2474,8 @@ section {
 } */
 .price-table tr td:not(:first-child) {
   text-align: center;
-  color: var(--secondary-color);
-  font-size: 18px;
+  /* color: var(--secondary-color);
+  font-size: 18px; */
 }
 
 .price-table tr:nth-child(even) {
