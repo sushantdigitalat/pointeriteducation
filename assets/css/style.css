@@ -1722,7 +1722,7 @@ section {
 
 .team .member .member-info {
   position: absolute;
-  bottom: -80px;
+  /* bottom: -80px; */
   left: 0px;
   right: 0px;
   background: rgba(255, 255, 255, 0.9);
@@ -1735,7 +1735,7 @@ section {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 16px;
-  color: var(--secondary-color);
+  color: #364146;
   position: relative;
   padding-bottom: 10px;
 }
@@ -1746,7 +1746,7 @@ section {
   display: block;
   width: 50px;
   height: 1px;
-  background: #0d12fc;
+  background: var(--secondary-color);
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -1755,7 +1755,7 @@ section {
   font-style: italic;
   display: block;
   font-size: 13px;
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
 }
 
 .team .member .social {
@@ -1768,7 +1768,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: #1acc8d;
+  color: var(--primary-color);
 }
 
 .team .member .social i {
@@ -2086,7 +2086,7 @@ section {
   content: "1";
   right: -85px;
   top: 12px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 700;
 }
 
@@ -2095,7 +2095,7 @@ section {
   content: "2";
   left: -85px;
   top: 12px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 700;
 }
 
@@ -2104,7 +2104,7 @@ section {
   content: "3";
   right: -85px;
   top: 12px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 700;
 }
 
@@ -2113,7 +2113,7 @@ section {
   content: "4";
   left: -85px;
   top: 12px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 700;
 }
 
@@ -2122,7 +2122,7 @@ section {
   content: "5";
   right: -85px;
   top: 12px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 700;
 }
 
@@ -2131,7 +2131,7 @@ section {
   content: "6";
   left: -85px;
   top: 12px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 700;
 }
 
@@ -2142,7 +2142,7 @@ section {
   margin-inline: calc(var(--inlineP) * -1);
 
   text-align: center;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 
   color: white;
   font-size: 1.25rem;
@@ -2174,8 +2174,8 @@ section {
   position: absolute;
   width: 0.7rem;
   aspect-ratio: 1;
-  background: var(--primary-color);
-  border: 0.3rem solid var(--primary-color);
+  background: var(--secondary-color);
+  border: 0.3rem solid var(--secondary-color);
   border-radius: 50%;
   top: 50%;
 
@@ -2988,7 +2988,7 @@ section {
 }
 
 #footer .copyright-wrap {
-  border-top: 1px solid var(--primary-color);
+  border-top: 1px solid #ccc;
 }
 
 #footer .credits {
@@ -3028,7 +3028,7 @@ section {
 }
 
 .footer-ul li{
-  margin: 0 0 0 40px;
+  margin: 0 0 0 30px;
 }
 
 /*--------------------------------------------------------------
